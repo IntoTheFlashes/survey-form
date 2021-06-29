@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <h1 id="title">Header 1</h1>
+        <p id="description">Description</p>
+        <form id="survey-form">
+            <div>
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Firstname Lastname" required>
+            </div>
+            <div>
+                <label for="number" id="number-label">Age:</label>
+                <input type="number" id="number" name="number" placeholder="enter your age" min="13" max="120" required>
+            </div>
+            <div>
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" name="email" placeholder="placeholder@mail.com" required>
+            </div>
+            <div>
+                <label for="how-found">Please select how you found this survey.</label>
+                <select name="how-found" id="dropdown">
+                    <option value="advertising">Advertising</option>
+                    <option value="search-engine">Search Engine</option>
+                    <option value="word-of-mouth">Word of Mouth</option>
+                </select>
+            </div>
+            <div>
+                <p>What is your favourite ice-cream flavour?</p>
+                <div>
+                    <label for="vanilla">Vanilla</label>
+                    <input type="radio" id="vanilla" name="flavour" value="Vanilla">
+                </div>
+                <div>
+                    <label for="mint">Mint</label>
+                    <input type="radio" id="mint" name="flavour" value="Mint">
+                </div>
+                <div>
+                    <label for="strawberry">Strawberry</label>
+                    <input type="radio" id="strawberry" name="flavour" value="Strawberry">
+                </div>
+            </div>
+            <div>
+                <p>Which hypothetical ice cream flavour(s) would you be interested in trying?</p>
+                <div>
+                    <label for="pesto">Pesto</label>
+                    <input type="checkbox" id="Pesto" name="hypo-flavour" value="Pesto">
+                </div>
+                <div>
+                    <label for="christmas-stuffing">Christmas Stuffing</label>
+                    <input type="checkbox" id="christmas-stuffing" name="hypo-flavour" value="Christmas Stuffing">
+                </div>
+                <div>
+                    <label for="cardboard">Cardboard</label>
+                    <input type="checkbox" id="cardboard" name="hypo-flavour" value="Cardboard">
+                </div>
+            </div>
+            <div>
+                <label for="comments">Please enter any additional comments:</label>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+            </div> 
+            <div>
+                <input type="submit" value="Submit" id="submit">
+            </div>
+        </form>
+    </body>
+</html>
