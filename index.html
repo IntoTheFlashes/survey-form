@@ -6,23 +6,33 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <h1 id="title">Header 1</h1>
-        <p id="description">Description</p>
+        <div id="intro">
+            <h1 id="title"><br>Ice-Cream <br> Flavour Survey</h1>
+            <p id="description">We're running a survey to help us decide which ice-cream flavours to focus on. In return, we'll email all participants a coupon to receive a free ice-cream of their favourite flavour.</p>
+        </div>
         <form id="survey-form">
             <div>
                 <label for="name" id="name-label">Name:</label>
+                <br>
+                <br>
                 <input type="text" id="name" name="name" placeholder="Firstname Lastname" required>
             </div>
             <div>
                 <label for="number" id="number-label">Age:</label>
+                <br>
+                <br>
                 <input type="number" id="number" name="number" placeholder="enter your age" min="13" max="120" required>
             </div>
             <div>
                 <label for="email" id="email-label">Email:</label>
+                <br>
+                <br>
                 <input type="email" id="email" name="email" placeholder="placeholder@mail.com" required>
             </div>
             <div>
-                <label for="how-found">Please select how you found this survey.</label>
+                <label for="how-found">Please select how you came across this survey.</label>
+                <br>
+                <br>
                 <select name="how-found" id="dropdown">
                     <option value="advertising">Advertising</option>
                     <option value="search-engine">Search Engine</option>
@@ -31,36 +41,32 @@
             </div>
             <div>
                 <p>What is your favourite ice-cream flavour?</p>
-                <div>
-                    <label for="vanilla">Vanilla</label>
+                <br>
+                <div id="radio-div">
                     <input type="radio" id="vanilla" name="flavour" value="Vanilla">
-                </div>
-                <div>
-                    <label for="mint">Mint</label>
+                    <label for="vanilla">Vanilla</label>
                     <input type="radio" id="mint" name="flavour" value="Mint">
-                </div>
-                <div>
-                    <label for="strawberry">Strawberry</label>
+                    <label for="mint">Mint</label>
                     <input type="radio" id="strawberry" name="flavour" value="Strawberry">
+                    <label for="strawberry">Strawberry</label>
                 </div>
             </div>
             <div>
-                <p>Which hypothetical ice cream flavour(s) would you be interested in trying?</p>
-                <div>
-                    <label for="pesto">Pesto</label>
+                <p>Which ice-cream flavour(s) would you be interested in trying?</p>
+                <br>
+                <div id="checkbox-div">
                     <input type="checkbox" id="Pesto" name="hypo-flavour" value="Pesto">
-                </div>
-                <div>
-                    <label for="christmas-stuffing">Christmas Stuffing</label>
+                    <label for="pesto">Pesto</label>
                     <input type="checkbox" id="christmas-stuffing" name="hypo-flavour" value="Christmas Stuffing">
-                </div>
-                <div>
-                    <label for="cardboard">Cardboard</label>
+                    <label for="christmas-stuffing">Christmas Stuffing</label>
                     <input type="checkbox" id="cardboard" name="hypo-flavour" value="Cardboard">
+                    <label for="cardboard">Cardboard</label>
                 </div>
             </div>
             <div>
                 <label for="comments">Please enter any additional comments:</label>
+                <br>
+                <br>
                 <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
             </div> 
             <div>
